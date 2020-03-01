@@ -1,0 +1,295 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Robotics challenge in outdoor for autonomous mobile robot, 中之島チャレンジ, 大阪ロボットチャレンジ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Osaka Robot Challenge</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #go-to-top {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="title mdl-layout-title">
+            <img class="logo-image" src="images/logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+
+          <!-- Navigation -->
+          <div class="container">
+            <nav class="navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="./index.html">Top</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="./concept.html">Concept</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="./regulation.html">Regulation</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="./committee.html">Committee</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="./contact.html">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="./history.html">History</a>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <!--
+        <div class="mdl-typography--text-center">
+          <div class="logo-font android-slogan">運営体制</div>
+          <br>
+        </div>
+        -->
+        <div class="demo-ribbon"></div>
+            <div class="demo-container mdl-grid">
+              <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+              <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                <h3>
+                大阪ロボットチャレンジ2020の課題
+                </h3>
+                <p>
+                  <ol>
+                  <li>中之島公園の中央公会堂周辺の歩行者天国エリアにて、定められたコースをロボットに自律走行させる。</li>
+                  <li>コースの定められた箇所でスタッフが差し出すゴミ3種類（ペットボトル、缶、コンビニ弁当）を判別する。</li>
+                  </ol>
+                </p>
+
+                <br>
+                <h3>
+                参加するロボットについて
+                </h3>
+                <p>
+                  <ol>
+                  <li>大きさ：幅75cm 以内，長さ120cm 以内，高さは最高部を 0.6m 以上，1.5m 以下．</li>
+                  <li>最高速度：4km/h 以下．</li>
+                  <li>つくばチャレンジのレギュレーションに準拠する。</li>
+                  </ol>
+                </p>
+
+                <br>
+                <h3>
+                マイルストーン設定
+                </h3>
+                <p>
+                  <ol>
+                  <li>コース周回のマイルストーン</li>
+                    <ul>
+                      <li>マイルストーン１：コースを１周する（横断歩道前の縦列駐車無し）</li>
+                      <li>マイルストーン２：ゴール直前の横断歩道前の縦列駐車待ちの後に、横断歩道管理者に指示されたタイミングで横断歩道を渡りコースを１周する</li>
+                    </ul>
+                  <li>ゴミ判別のマイルストーン</li>
+                  <ul>
+                  <li>マイルストーン１：２箇所のゴミ判別実施課題のうち、どちらか一方で３種類のゴミの判別に成功</li>
+                  <li>マイルストーン２：２箇所のゴミ判別実施課題の双方で３種類のゴミ判別に成功</li>
+                  </ul>
+                  <li>人物発見のマイルストーン</li>
+                  <ul>
+                  <li>マイルストーン１：２箇所のゴミ判別実施場所に立っているスタッフのうち、どちらか一方のスタッフを発見し、３ｍ以内に自律的に近づき５秒以上停止すること</li>
+                  <li>マイルストーン２：２箇所のゴミ判別実施場所に立っているスタッフ双方を発見し、３ｍ以内に自律的に近づき５秒以上停止すること</ul>
+                  </ul>
+                  </ol>
+                </p>
+              </div>
+            </div>
+
+        
+        <div class="android-screen-section mdl-typography--text-center">
+          <a name="screens"></a>
+        <!--
+          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
+          <div class="android-screens">
+            <div class="android-wear android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/wear-silver-on.png">
+                <img class="android-screen-image" src="images/wear-black-on.png">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+            </div>
+            <div class="android-phone android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus6-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+            </div>
+            <div class="android-tablet android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus9-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+            </div>
+            <div class="android-tv android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/tv-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
+            </div>
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/auto-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
+            </div>
+          </div>
+        </div>
+        <div class="android-wear-section">
+          <div class="android-wear-band">
+            <div class="android-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+                Android works perfectly with your favourite apps like Google Maps,
+                Calendar and YouTube.
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="android-customized-section">
+          <div class="android-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+            <p class="mdl-typography--font-light">
+              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+              <br>
+              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+            </p>
+          </div>
+          <div class="android-customized-section-image"></div>
+        -->
+        </div>
+
+        <div class="android-more-section">
+          <div class="android-section-title mdl-typography--display-1-color-contrast">コンテンツ</div>
+          <div class="android-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">大会の意義</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">大阪市域での自律走行ロボット実証事業の概要と大阪関西万博までのマイルストーン</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="./concept.html">
+                   More Information
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-2.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">大会ルール</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">2020年度大阪チャレンジの開催場所と詳細ルール説明</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="./regulation.html">
+                   More Information
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-3.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">実行委員</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">実行委員長挨拶と実行委員紹介</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="./committee.html">
+                   More Information
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-4.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">問い合わせ</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">大会実行委員会問い合わせ先</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="./contact.html">
+                   More Information
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light"> c 2020 Osaka Robot Challenge</p>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <a href="#top" id="go-to-top" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Go to TOP</a>
+    <script src="./material.min.js"></script>
+  </body>
+</html>

@@ -178,14 +178,15 @@ a img{
   font-weight: 500;
 }
 
-.android-slogan {
+.android-slogan {/*トップの文字の位置調整*/
   font-size: 60px;
-  padding-top: 160px;
+  padding-top: 70px;
 }
 
 .android-sub-slogan {
   font-size: 21px;
-  padding-top: 24px;
+  margin: 10 30px;
+  padding-top: 30px;
 }
 
 .android-create-character {
@@ -495,7 +496,7 @@ a img{
   }
 
   .android-be-together-section {
-    height: 350px;
+    height: 500px;
   }
 
   .android-slogan {
@@ -531,4 +532,22 @@ a img{
   .android-footer .mdl-mega-footer--bottom-section {
     display: none;
   }
+
+  .demo-main {
+    margin-top: -35vh;
+    flex-shrink: 0;
+  }
+  
+  .demo-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+  }
+  
+  .demo-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+  }
+  
 }
